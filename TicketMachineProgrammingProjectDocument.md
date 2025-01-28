@@ -115,10 +115,10 @@ Document your results using the following table:
 
 The [Mister Ticket Machine](https://github.com/thatlarrypearson/mister-ticket-machine) code repository is available on github.  It includes this document as well as:
 
-- Scaffolding - [mtm_scaffolding](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_scaffolding.py).
-- Complete solution - [mtm_complete](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_complete.py).
-- Parson's problem with distractors - [mtm_function_distractors.py](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function_distractors.py)
-- Parson's problem without distractors - [mtm_function.py](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function.py)
+- Scaffolding - [mtm scaffolding](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_scaffolding.py).
+- Complete solution - [mtm complete](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm.py).
+- Parson's problem with distractors - [mtm function distractors](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function_distractors.py)
+- Parson's problem without distractors - [mtm function](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function.py)
 
 Both the scaffolding and the complete solution, by the way they were written, cause the learners to be able to see the structure and flow of the program without difficulty.  This enables the learners to easily see the underlying Block Model the code embodies.
 
@@ -154,7 +154,7 @@ Instructor assigns pair programming project to complete some, but not all of the
 
 ### Parson's Problem
 
-Based on observations during pair programming, take one of the subroutine/functions found in [mtm_complete](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_complete.py) and randomize some or all of the lines.
+Based on observations during pair programming, take one of the subroutine/functions found in [mtm_complete](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm.py) and randomize some or all of the lines.
 
 Alternatively, the included [Parson's problem with distractors](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function_distractors.py) and [Parson's problem without distractors](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function.py) may be used as an assessment tool instead.
 
@@ -170,11 +170,11 @@ Here are some questions to ask learners to facilitate discussion on improving th
 - What happens if the customer only wants two or three child tickets?  What happens if the customer is paying for two families?  Can the customer do this as a single transaction?  What would be easier for the customer?
 - What happens if the ticket machine doesn't have enough money to provide change?  Example, customer wants one child ticket but the ticket machine is out of $1 bills.
 - Should the ticket machine have an exact amount required indicator?  Should that be enforced in code?  Example, exact amount required but customer only has a $20 dollar bill for a $10 dollar purchase.  Should the purchase be allowed anyway?
+- Should the customer be able to see what the rules for each ticket are and where would this be visible to them?  Example, a child's ticket is only for a person 17 and younger in age.  A family ticket is only good for at most two adults and four children.
+- Should seniors, veterans or active-duty service members get a discount?  If so, how would the discount be structured?
 
 ### Additional Notes
 
 To implement a timeout for the input() function in Python, you can use external libraries like [inputimeout](https://pypi.org/project/inputimeout/) or [timedinput](https://pypi.org/project/timedinput/).  This would allow the ticket machine to recover from a customer that walks away from the kiosk before completing a transaction.
 
 When doing keyboard input on many computers, <CTRL>-C will interrupt the running python program.  The built-in Python Exception for catching keyboard interrupts in ```KeyboardInterrupt```.  This will allow recovery but where this exception handler is placed in the program flow can be tricky.
-
-
