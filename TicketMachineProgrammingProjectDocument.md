@@ -115,12 +115,12 @@ Document your results using the following table:
 
 The [Mister Ticket Machine](https://github.com/thatlarrypearson/mister-ticket-machine) code repository is available on github.  It includes this document as well as:
 
-- Scaffolding - [mtm scaffolding](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_scaffolding.py).
 - Complete solution - [mtm complete](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm.py).
+- Scaffolding - [mtm scaffolding](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_scaffolding.py).
 - Parson's problem with distractors - [mtm function distractors](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function_distractors.py)
 - Parson's problem without distractors - [mtm function](https://github.com/thatlarrypearson/mister-ticket-machine/mtm/mtm_function.py)
 
-Both the scaffolding and the complete solution, by the way they were written, cause the learners to be able to see the structure and flow of the program without difficulty.  This enables the learners to easily see the underlying Block Model the code embodies.
+Both the scaffolding and the complete solution, by the way they were written, cause the learners to be able to see the structure and flow of the program without difficulty.  This should enable the learners to see the underlying Block Model the code embodies.
 
 ## Pedagogical Approach
 
